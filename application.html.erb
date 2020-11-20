@@ -1,0 +1,15 @@
+<div class="container">
+    <a href="/emails/" class="btn btn-info" data-method="POST", data-remote="true"> Recevoir un email </a>
+        <div class="columns">
+            <div class="left-part-object-email">
+                <% @emails.each do |email|  %>
+                    <p><%= email.object  %></p>
+                <% end  %>
+            </div>
+            <div class="right-part-body-email">
+                <% @emails.each do |email|  %>
+                    <p><%= email.body  %></p>
+                <% end  %>
+            </div>
+        </div>
+</div>
